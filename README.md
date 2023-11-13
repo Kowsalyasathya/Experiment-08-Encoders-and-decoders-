@@ -1,11 +1,11 @@
 # Experiment-08- Encoders-and-decoders 
-### AIM: 
+## AIM: 
 To implement 8 to 3 Encoder and  3to8 Decoder using verilog and validate its outputs
-### HARDWARE REQUIRED:  
+## HARDWARE REQUIRED:  
 PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   
+## SOFTWARE REQUIRED:   
 Quartus prime
-### THEORY 
+## THEORY 
 ## Encoders
 Binary code of N digits can be used to store 2N distinct elements of coded information. This is what encoders and decoders are used for. Encoders convert 2N lines of input into a code of N bits and Decoders decode the N bits into 2N lines.
 
@@ -24,7 +24,7 @@ Z = D1 + D3 + D5 + D7
 Hence, the encoder can be realised with OR gates as follows:
 ![image](https://user-images.githubusercontent.com/36288975/171543740-68403b82-aa93-4c98-9343-f32b14885a2e.png)
 ## Figure -02 3 to 8 Encoder implenentation 
-### Decoders 
+## Decoders 
 A decoder does the opposite job of an encoder. It is a combinational circuit that converts n lines of input into 2n lines of output.
 
 Let’s take an example of 3-to-8 line decoder.
@@ -45,7 +45,7 @@ D7 = X Y Z
 ## Figure -03 8 to 3 Decoder 
 ![image](https://user-images.githubusercontent.com/36288975/171543866-5a6eace6-8683-49d7-9c4f-a7cb30ec3035.png)
 ## Figure -04 8 to 3 Decoder implementation 
-### Procedure
+## Procedure
 
 1.Start the module using module projname().
 
@@ -59,7 +59,7 @@ D7 = X Y Z
 
 6.Generate RTL realization and timing diagrams.
 
-### PROGRAM 
+## PROGRAM 
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
 Developed by: KOWSALYA M
@@ -95,20 +95,20 @@ and (Y2,I,S0,S1C);
 and (Y3,I,S0,S1);
 endmodule
 ```
-### RTL LOGIC :
+## RTL LOGIC :
 ### MULTIPLEXER :
 ![281362249-3acd724f-778b-4273-8d52-473ef8da773e](https://github.com/Kowsalyasathya/Experiment-08-Encoders-and-decoders-/assets/118671457/f6f23780-acd0-4623-8321-b8306c26195c)
 ### DEMULTIPLEXER:
 ![281366644-7616466e-a3ee-4fbe-9666-fba4a22f09ad](https://github.com/Kowsalyasathya/Experiment-08-Encoders-and-decoders-/assets/118671457/5a3b51d2-02a6-42a9-b942-c5a1feb050a1)
-### TIMING DIGRAMS:
+## TIMING DIGRAMS:
 ### MULTIPLEXER :
 ![281367344-68f79e23-ba07-40f2-b7de-7af918ebba85](https://github.com/Kowsalyasathya/Experiment-08-Encoders-and-decoders-/assets/118671457/b619d53e-3ba7-4f75-bca3-558fde61c68b)
 ###  DEMULTIPLEXER:
 ![281367624-0b87433e-8d25-44d3-9301-6a59cf1d94f2](https://github.com/Kowsalyasathya/Experiment-08-Encoders-and-decoders-/assets/118671457/af56803f-901d-4a75-9f3b-701042e57eaa)
-### TRUTH TABLE 
+## TRUTH TABLE 
 ### MULTIPLEXER :
 ![281367824-e97adc77-e0d4-41b1-bcf1-b2e8cf30a065](https://github.com/Kowsalyasathya/Experiment-08-Encoders-and-decoders-/assets/118671457/953baa58-0da3-4433-a8a2-df3eee976e86)
 ### DEMULTIPLEXER:
 ![281367880-4172b3ca-6cc8-4009-b572-4e13c6e61351](https://github.com/Kowsalyasathya/Experiment-08-Encoders-and-decoders-/assets/118671457/fabb034d-3cf3-4d21-8955-cd395744b28e)
-### RESULTS :
+## RESULTS :
 Hence, 4x1 Multiplexer and 1x4 Demultiplexer is been implemented and verified using verilog programming and its output are validated.
